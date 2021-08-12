@@ -11,5 +11,3 @@ CREATE TABLE quote (
   `IsDeleted` bool DEFAULT 0,
   PRIMARY KEY (`IdQuote`)
 )
-
-select * from quote
