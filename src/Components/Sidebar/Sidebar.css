@@ -1,0 +1,29 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    background-color: lightgray;
+    color: #5F6CAF;
+    font-weight: 500;
+    justify-content: space-between;
+    height: calc(100vh - 90px);
+}
+.bi {
+    padding-right: 8px;
+    font-size: 18px;
+}
+
+.divider {
+    border: 1px solid gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.copyright {
+    color: gray;
+    font-weight: unset;
+    margin-top: auto;
+    font-size: 11px;
+    padding: 10px;
+}

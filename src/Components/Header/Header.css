@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    flex-grow: 1;
+    height: 90px;
+    background-color: #5F6CAF;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 45px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    object-fit: cover;
+}
+
