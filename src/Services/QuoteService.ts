@@ -1,15 +1,20 @@
 import axios, { AxiosResponse } from 'axios';
 import { PendingQuoteListResult } from '../Models/Quote/PendingQuoteListResult';
 import { Quote } from "../Models/Quote/Quote";
-import { QuoteListResult } from '../Models/Quote/QuoteListResult';
+import { QuoteResult } from '../Models/Quote/QuoteResult';
 import { Api } from './Helper';
 const apiUrl = "http://localhost:3001/";
 
 
 export class QuoteService {
 
-    static getQuotes(): Promise<QuoteListResult[]> {
+    static getQuotes(): Promise<QuoteResult[]> {
         var url = apiUrl + "getQuotes";
+        return Api.getList(url);
+    }
+
+    static getQuoteDetail(quoteId): Promise<QuoteResult> {
+        var url = apiUrl + "getQuoteDetail/" + quoteId;
         return Api.get(url);
     }
 

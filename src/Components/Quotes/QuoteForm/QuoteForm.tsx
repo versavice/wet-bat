@@ -42,6 +42,7 @@ export class QuoteForm extends React.Component<any, any>  {
 
     componentDidMount() {
         this.loadLocations();
+        this.loadTransportations();
     }
 
     quoteValid(): boolean {
@@ -107,6 +108,8 @@ export class QuoteForm extends React.Component<any, any>  {
         this.setState({ locationsLoading: true });
         LocationService.getLocations().then((res) => {
             this.setState({ locations: res.data, locationsLoading: false });
+        }).catch(e => {
+            this.setState({ transportationsLoading: false });
         });
     }
 
@@ -114,6 +117,8 @@ export class QuoteForm extends React.Component<any, any>  {
         this.setState({ transportationsLoading: true });
         TransportationService.getTransportations().then((res) => {
             this.setState({ transportations: res.data, transportationsLoading: false });
+        }).catch(e => {
+            this.setState({ transportationsLoading: false });
         });
     }
 

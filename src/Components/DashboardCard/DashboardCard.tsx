@@ -1,6 +1,5 @@
 import React from "react";
 import './DashboardCard.css';
-import '../../index.css';
 
 export class DashboardCard extends React.Component <any, any> {
     

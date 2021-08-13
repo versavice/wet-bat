@@ -4,4 +4,4 @@ CREATE TABLE `traveller` (
   `LastName` varchar(45) DEFAULT NULL,
   `Email` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`IdTraveller`)
-)
+);

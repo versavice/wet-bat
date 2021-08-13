@@ -1,6 +1,5 @@
 import React from "react";
 import './Home.css';
-import '../../index.css';
 import { QuoteForm } from "../Quotes/QuoteForm/QuoteForm";
 import { DashboardCard } from "../DashboardCard/DashboardCard";
 import { HeroCard } from "./HeroCard/HeroCard";
@@ -37,9 +36,7 @@ export class Home extends React.Component<any, any> {
             });
         }).catch(e => {
             alert("Failed to load pending quotes: " + e.message);
-            this.setState({ 
-                quotesLoading: false 
-            });
+            this.setState({ quotesLoading: false });
         });
     }
 

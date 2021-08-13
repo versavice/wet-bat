@@ -6,6 +6,7 @@ const mySQL = require('mysql');
 var QuoteController = require('./Services/QuoteController');
 var LocationController = require('./Services/LocationController');
 var TravellerController = require('./Services/TravellerController');
+var TransportationController = require('./Services/TransportationController');
 
 const db = mySQL.createPool({
   host: "localhost",
@@ -19,6 +20,7 @@ app.use(express.json());
 QuoteController(app, db);
 LocationController(app, db);
 TravellerController(app, db);
+TransportationController(app, db);
 
 
 app.listen(3001, () => {

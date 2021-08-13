@@ -1,0 +1,11 @@
+.quote-detail-row {
+    height: 30px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+.quote-detail-travel-arrow {
+    font-size: 22px;
+    color: gray;
+    padding-right: 0;
+}

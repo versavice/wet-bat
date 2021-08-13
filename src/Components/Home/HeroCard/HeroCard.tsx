@@ -1,6 +1,5 @@
 import React from "react";
 import './HeroCard.css';
-import '../../../index.css';
 import mainCardImg from "../../../Assets/mainCardImg.png";
 
 export class HeroCard extends React.Component <any, any> {

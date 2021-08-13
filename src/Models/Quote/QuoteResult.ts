@@ -1,6 +1,7 @@
-export class QuoteListResult {
+export class QuoteResult {
     IdQuote: number;
     ContactName: string;
+    Travellers: number;
     DestinationCity: string;
     DestinationCode: string;
     DepartureCity: string;
